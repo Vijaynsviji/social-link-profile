@@ -1,0 +1,198 @@
+:root{
+    --clr-primary-400: hsl(75, 94%, 57%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-400: hsl(0, 0%, 20%);
+    --clr-neutral-500: hsl(0, 0%, 12%);
+    --clr-neutral-700: hsl(0, 0%, 8%);
+
+    --fs-body : 0.857rem;
+    --fs-heading : 1.625rem;
+
+    --ff-body : "Inter", sans-serif;
+
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+}
+
+/* utility classes */
+
+
+.text-primary-400{
+    color: var(--clr-primary-400);
+}
+.text-neutral-100{
+    color: var(--clr-neutral-100);
+}
+
+.bg-primary-400{
+    background-color: var(--clr-primary-400);
+}
+.bg-neutral-400{
+    background-color: var(--clr-neutral-400);
+}
+.bg-neutral-500{
+    background-color: var(--clr-neutral-500);
+}
+.bg-neutral-700{
+    background-color: var(--clr-neutral-700);
+}
+
+
+.fs-heading{
+    font-size: var(--fs-heading);
+}
+
+.fw-400{
+    font-weight: var(--fw-400);
+}
+.fw-600{
+    font-weight: var(--fw-600);
+}
+.fw-700{
+    font-weight: var(--fw-700);
+}
+.ff-body{
+    font-family: var(--ff-body);
+}
+
+
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* main css */
+
+body{
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-700);
+  font-weight: var(--fw-400);
+  display: grid;
+  place-items: center;
+}
+
+.container{
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 2rem;
+  background-color: var(--clr-neutral-500);
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  border-radius: 0.7rem;
+}
+
+img{
+  height: 5rem;
+  border-radius: 5rem;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  padding: 0.625rem;
+  border-radius: 0.325rem;
+  background-color: var(--clr-neutral-400);
+  font-weight: var(--fw-600);
+}
+
+.links:hover{
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-700);
+  cursor: pointer;
+}
+
+
+
+
